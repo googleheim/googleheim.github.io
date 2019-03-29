@@ -1,0 +1,85 @@
+body {
+    background-color: #FFFFFF;
+    font-family: 'Rubik', sans-serif;
+    color: rgb(48, 48, 48);
+    text-align: left;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 18pt;
+    color: #FF5960;
+}
+
+p {
+    font-weight: 400;
+    font-size: 16pt;
+}
+
+a {
+    text-decoration: none;
+    color: #008489;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container-main {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: 20px;
+}
+
+.flex-container {
+    display:flex;
+    justify-content: stretch;
+    align-items: stretch;
+}
+
+.img {
+    background-image: url("assets/dennis-profile.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 300px;
+    flex: 1;
+}
+
+.flex-paragraph {
+    max-width: 500px;
+    flex: 1;
+    margin-left: 10px;
+
+}
+
+
+@media screen and (min-width: 0) and (max-width: 900px){
+    .container-main {
+        width: initial;
+        margin-left: initial;
+        margin-right: initial;
+        position: initial;
+    }
+}
+
+@media screen and (min-width: 0) and (max-width: 600px){
+    .flex-container {
+     flex-wrap: wrap;
+    }
+
+    .img {
+        min-width: 100%;
+    max-width: initial;
+        min-height: 250px;
+    }
+    .flex-paragraph {
+        margin-left: 0px;
+
+    }
+}
+
